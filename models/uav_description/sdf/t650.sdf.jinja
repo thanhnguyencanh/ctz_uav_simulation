@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <sdf version='1.6'>
 
-  {%- import 'mrs_robots_description/sdf/component_snippets.sdf.jinja' as components -%}
-  {%- import 'mrs_robots_description/sdf/generic_components.sdf.jinja' as generic -%}
+  {%- import 'uav_description/sdf/component_snippets.sdf.jinja' as components -%}
+  {%- import 'uav_description/sdf/generic_components.sdf.jinja' as generic -%}
 
   {# ================================================================== #}
   {# ||                    parameters definition                     || #}
@@ -42,24 +42,24 @@
   {# Meshes {--> #}
 
   {# Drone parts {--> #}
-  {%- set top_board_mesh_file = 'model://mrs_robots_description/meshes/tarot/t650/tarot_t650_top_board.dae' -%}
-  {%- set bottom_board_mesh_file = 'model://mrs_robots_description/meshes/tarot/t650/tarot_t650_bottom_board.dae' -%}
-  {%- set arm_mesh_file_front = 'model://mrs_robots_description/meshes/tarot/t650/tarot_t650_arm_black.dae' -%}
-  {%- set arm_mesh_file_back = 'model://mrs_robots_description/meshes/tarot/t650/tarot_t650_arm_red.dae' -%}
-  {%- set leg_mesh_file = 'model://mrs_robots_description/meshes/tarot/t650/tarot_t650_leg.dae' -%}
-  {%- set rotor_mesh_file_front = 'model://mrs_robots_description/meshes/tarot/t650/tarot_t650_motor_black.dae' -%}
-  {%- set rotor_mesh_file_back = 'model://mrs_robots_description/meshes/tarot/t650/tarot_t650_motor_orange.dae' -%}
-  {%- set prop_mesh_file = 'model://mrs_robots_description/meshes/tarot/t650/tarot_t650_prop_low_poly.dae' -%}
-  {%- set pixhawk_mesh_file = 'model://mrs_robots_description/meshes/sensors/pixhawk.dae' -%}
-  {%- set nuc_mesh_file = 'model://mrs_robots_description/meshes/tarot/t650/tarot_t650_nuc.dae' -%}
+  {%- set top_board_mesh_file = 'model://uav_description/meshes/tarot/t650/tarot_t650_top_board.dae' -%}
+  {%- set bottom_board_mesh_file = 'model://uav_description/meshes/tarot/t650/tarot_t650_bottom_board.dae' -%}
+  {%- set arm_mesh_file_front = 'model://uav_description/meshes/tarot/t650/tarot_t650_arm_black.dae' -%}
+  {%- set arm_mesh_file_back = 'model://uav_description/meshes/tarot/t650/tarot_t650_arm_red.dae' -%}
+  {%- set leg_mesh_file = 'model://uav_description/meshes/tarot/t650/tarot_t650_leg.dae' -%}
+  {%- set rotor_mesh_file_front = 'model://uav_description/meshes/tarot/t650/tarot_t650_motor_black.dae' -%}
+  {%- set rotor_mesh_file_back = 'model://uav_description/meshes/tarot/t650/tarot_t650_motor_orange.dae' -%}
+  {%- set prop_mesh_file = 'model://uav_description/meshes/tarot/t650/tarot_t650_prop_low_poly.dae' -%}
+  {%- set pixhawk_mesh_file = 'model://uav_description/meshes/sensors/pixhawk.dae' -%}
+  {%- set nuc_mesh_file = 'model://uav_description/meshes/tarot/t650/tarot_t650_nuc.dae' -%}
   {# <!--}--> #}
 
   {# Mounts {--> #}
-  {%- set battery_mount_mesh = 'model://mrs_robots_description/meshes/tarot/t650/tarot_t650_battery_mount.dae' -%}
-  {%- set bluefox_garmin_mount_mesh = 'model://mrs_robots_description/meshes/tarot/t650/tarot_t650_bluefox_garmin_mount.dae' -%}
-  {%- set ouster_mount_mesh = 'model://mrs_robots_description/meshes/tarot/t650/tarot_t650_ouster_mount.dae' -%}
-  {%- set rplidar_mount_mesh = 'model://mrs_robots_description/meshes/tarot/t650/tarot_t650_rplidar_mount.dae' -%}
-  {%- set realsense_front_mount_mesh = 'model://mrs_robots_description/meshes/tarot/t650/tarot_t650_realsense_front_mount.dae' -%}
+  {%- set battery_mount_mesh = 'model://uav_description/meshes/tarot/t650/tarot_t650_battery_mount.dae' -%}
+  {%- set bluefox_garmin_mount_mesh = 'model://uav_description/meshes/tarot/t650/tarot_t650_bluefox_garmin_mount.dae' -%}
+  {%- set ouster_mount_mesh = 'model://uav_description/meshes/tarot/t650/tarot_t650_ouster_mount.dae' -%}
+  {%- set rplidar_mount_mesh = 'model://uav_description/meshes/tarot/t650/tarot_t650_rplidar_mount.dae' -%}
+  {%- set realsense_front_mount_mesh = 'model://uav_description/meshes/tarot/t650/tarot_t650_realsense_front_mount.dae' -%}
   {# <!--}--> #}
 
   {# Scales {--> #}

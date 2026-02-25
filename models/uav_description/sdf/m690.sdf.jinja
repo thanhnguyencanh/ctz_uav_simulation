@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <sdf version='1.6'>
 
-  {%- import 'mrs_robots_description/sdf/component_snippets.sdf.jinja' as components -%}
-  {%- import 'mrs_robots_description/sdf/generic_components.sdf.jinja' as generic -%}
+  {%- import 'uav_description/sdf/component_snippets.sdf.jinja' as components -%}
+  {%- import 'uav_description/sdf/generic_components.sdf.jinja' as generic -%}
 
   {# ================================================================== #}
   {# ||                    parameters definition                     || #}
@@ -42,18 +42,18 @@
   {# Meshes {--> #}
 
   {# Frame parts {--> #}
-  {%- set central_body_mesh_file = 'model://mrs_robots_description/meshes/t_drones/m690b/t_drone_m690b_central_body.stl' -%}
-  {%- set arm_mesh_file = 'model://mrs_robots_description/meshes/t_drones/m690b/t_drone_m690b_arm.stl' -%}
-  {%- set legs_mesh_file = 'model://mrs_robots_description/meshes/t_drones/m690b/t_drone_m690b_legs.stl' -%}
+  {%- set central_body_mesh_file = 'model://uav_description/meshes/t_drones/m690b/t_drone_m690b_central_body.stl' -%}
+  {%- set arm_mesh_file = 'model://uav_description/meshes/t_drones/m690b/t_drone_m690b_arm.stl' -%}
+  {%- set legs_mesh_file = 'model://uav_description/meshes/t_drones/m690b/t_drone_m690b_legs.stl' -%}
   {# <!--}--> #}
 
   {# Motors and props {--> #}
-  {%- set motor_top_mesh_file = 'model://mrs_robots_description/meshes/t_drones/m690b/t_drone_m690b_motor_top_part.stl' -%}
-  {%- set prop_mesh_file = 'model://mrs_robots_description/meshes/t_drones/m690b/t_drone_m690b_propeller.stl' -%}
+  {%- set motor_top_mesh_file = 'model://uav_description/meshes/t_drones/m690b/t_drone_m690b_motor_top_part.stl' -%}
+  {%- set prop_mesh_file = 'model://uav_description/meshes/t_drones/m690b/t_drone_m690b_propeller.stl' -%}
   {# <!--}--> #}
 
   {# Mounts {--> #}
-  {%- set battery_mesh_file = 'model://mrs_robots_description/meshes/t_drones/m690b/t_drone_m690b_battery.stl' -%}
+  {%- set battery_mesh_file = 'model://uav_description/meshes/t_drones/m690b/t_drone_m690b_battery.stl' -%}
   {# <!--}--> #}
 
   {# Scales {--> #}

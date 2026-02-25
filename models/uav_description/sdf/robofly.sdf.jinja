@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <sdf version='1.6'>
 
-  {%- import 'mrs_robots_description/sdf/component_snippets.sdf.jinja' as components -%}
-  {%- import 'mrs_robots_description/sdf/generic_components.sdf.jinja' as generic -%}
+  {%- import 'uav_description/sdf/component_snippets.sdf.jinja' as components -%}
+  {%- import 'uav_description/sdf/generic_components.sdf.jinja' as generic -%}
 
   {# ================================================================== #}
   {# ||                    parameters definition                     || #}
@@ -40,9 +40,9 @@
   {# Meshes {--> #}
 
   {# Drone parts {--> #}
-  {%- set body_mesh = 'model://mrs_robots_description/meshes/robofly/body.dae' -%}
-  {%- set prop_cw_mesh = 'model://mrs_robots_description/meshes/robofly/prop_cw.dae'-%}
-  {%- set prop_ccw_mesh = 'model://mrs_robots_description/meshes/robofly/prop_ccw.dae'-%}
+  {%- set body_mesh = 'model://uav_description/meshes/robofly/body.dae' -%}
+  {%- set prop_cw_mesh = 'model://uav_description/meshes/robofly/prop_cw.dae'-%}
+  {%- set prop_ccw_mesh = 'model://uav_description/meshes/robofly/prop_ccw.dae'-%}
   {# <!--}--> #}
 
   {# Scales {--> #}

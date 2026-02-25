@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <sdf version="1.6">
 
-  {%- import 'mrs_robots_description/sdf/component_snippets.sdf.jinja' as components -%}
-  {%- import 'mrs_robots_description/sdf/generic_components.sdf.jinja' as generic -%}
+  {%- import 'uav_description/sdf/component_snippets.sdf.jinja' as components -%}
+  {%- import 'uav_description/sdf/generic_components.sdf.jinja' as generic -%}
 
   {# ================================================================== #}
   {# ||                    parameters definition                     || #}
@@ -48,41 +48,41 @@
   {# Meshes {--> #}
 
   {# Frame parts {--> #}
-  {%- set top_board_mesh_file = 'model://mrs_robots_description/meshes/x500v2/top_board_mesh_file.dae' -%}
-  {%- set bottom_board_mesh_file = 'model://mrs_robots_description/meshes/x500v2/bottom_board_mesh_file.dae' -%}
-  {%- set arm_carbon_mesh_file = 'model://mrs_robots_description/meshes/x500v2/arm_carbon_mesh_file.dae' -%}
-  {%- set arm_plastic1_mesh_file = 'model://mrs_robots_description/meshes/x500v2/arm_plastic1_mesh_file.stl' -%}
-  {%- set arm_plastic2_mesh_file = 'model://mrs_robots_description/meshes/x500v2/arm_plastic2_mesh_file.stl' -%}
-  {%- set arm_3d_print_mesh_file = 'model://mrs_robots_description/meshes/x500v2/arm_3d_print_mesh_file.stl' -%}
-  {%- set leg_3d_print_mesh_file = 'model://mrs_robots_description/meshes/x500v2/leg_3d_print_mesh_file.stl' -%}
+  {%- set top_board_mesh_file = 'model://uav_description/meshes/x500v2/top_board_mesh_file.dae' -%}
+  {%- set bottom_board_mesh_file = 'model://uav_description/meshes/x500v2/bottom_board_mesh_file.dae' -%}
+  {%- set arm_carbon_mesh_file = 'model://uav_description/meshes/x500v2/arm_carbon_mesh_file.dae' -%}
+  {%- set arm_plastic1_mesh_file = 'model://uav_description/meshes/x500v2/arm_plastic1_mesh_file.stl' -%}
+  {%- set arm_plastic2_mesh_file = 'model://uav_description/meshes/x500v2/arm_plastic2_mesh_file.stl' -%}
+  {%- set arm_3d_print_mesh_file = 'model://uav_description/meshes/x500v2/arm_3d_print_mesh_file.stl' -%}
+  {%- set leg_3d_print_mesh_file = 'model://uav_description/meshes/x500v2/leg_3d_print_mesh_file.stl' -%}
   {# <!--}--> #}
 
   {# Motors and props {--> #}
-  {%- set motor_bottom_mesh_file = 'model://mrs_robots_description/meshes/x500v2/motor_bottom_mesh_file.stl' -%}
-  {%- set motor_middle_mesh_file = 'model://mrs_robots_description/meshes/x500v2/motor_middle_mesh_file.stl' -%}
-  {%- set motor_top_mesh_file = 'model://mrs_robots_description/meshes/x500v2/motor_top_mesh_file.stl' -%}
-  {%- set prop_mesh_file = 'model://mrs_robots_description/meshes/x500v2/prop_mesh_file.dae' -%}
+  {%- set motor_bottom_mesh_file = 'model://uav_description/meshes/x500v2/motor_bottom_mesh_file.stl' -%}
+  {%- set motor_middle_mesh_file = 'model://uav_description/meshes/x500v2/motor_middle_mesh_file.stl' -%}
+  {%- set motor_top_mesh_file = 'model://uav_description/meshes/x500v2/motor_top_mesh_file.stl' -%}
+  {%- set prop_mesh_file = 'model://uav_description/meshes/x500v2/prop_mesh_file.dae' -%}
   {# <!--}--> #}
 
   {# Sensors and computers {--> #}
-  {%- set pixhawk6c_mesh_file = 'model://mrs_robots_description/meshes/x500v2/pixhawk6c_mesh_file.stl' -%}
-  {%- set gps_mount_mesh_file = 'model://mrs_robots_description/meshes/x500v2/gps_mount_mesh_file.stl' -%}
-  {%- set nuc_board_mesh_file = 'model://mrs_robots_description/meshes/x500v2/nuc_board_mesh_file.stl' -%}
-  {%- set nuc_cooler_mesh_file = 'model://mrs_robots_description/meshes/x500v2/nuc_cooler_mesh_file.stl' -%}
-  {%- set siyi_camera_mesh_file = 'model://mrs_robots_description/meshes/sensors/siyi_ZT6_camera.stl' -%}
+  {%- set pixhawk6c_mesh_file = 'model://uav_description/meshes/x500v2/pixhawk6c_mesh_file.stl' -%}
+  {%- set gps_mount_mesh_file = 'model://uav_description/meshes/x500v2/gps_mount_mesh_file.stl' -%}
+  {%- set nuc_board_mesh_file = 'model://uav_description/meshes/x500v2/nuc_board_mesh_file.stl' -%}
+  {%- set nuc_cooler_mesh_file = 'model://uav_description/meshes/x500v2/nuc_cooler_mesh_file.stl' -%}
+  {%- set siyi_camera_mesh_file = 'model://uav_description/meshes/sensors/siyi_ZT6_camera.stl' -%}
   {# <!--}--> #}
 
   {# Mounts {--> #}
-  {%- set battery_mesh_file = 'model://mrs_robots_description/meshes/x500v2/battery_mesh_file.stl' -%}
-  {%- set battery_mount_mesh_file = 'model://mrs_robots_description/meshes/x500v2/battery_mount_mesh_file.stl' -%}
-  {%- set nuc_hex_posts_mesh_file = 'model://mrs_robots_description/meshes/x500v2/nuc_hex_posts_mesh_file.stl' -%}
-  {%- set gps_module_mesh_file = 'model://mrs_robots_description/meshes/x500v2/gps_module_mesh_file.stl' -%}
-  {%- set garmin_mount_mesh_file = 'model://mrs_robots_description/meshes/x500v2/garmin_mount_mesh_file.stl' -%}
-  {%- set lidar_mount_mesh_file = 'model://mrs_robots_description/meshes/x500v2/lidar_mount_mesh_file.stl' -%}
-  {%- set realsense_mount_mesh_file = 'model://mrs_robots_description/meshes/x500v2/realsense_mount_mesh_file.stl' -%}
-  {%- set bluefox_mount_mesh_file = 'model://mrs_robots_description/meshes/x500v2/bluefox_mount_mesh_file.stl' -%}
-  {%- set uvdar_mount_mesh = 'model://mrs_robots_description/meshes/dji/f450/dji_f450_uvdar_mount.dae' -%}
-  {%- set qorvo_dw1000_mount_file = 'model://mrs_robots_description/meshes/x500v2/qorvo_dw1000_mount.stl' -%}
+  {%- set battery_mesh_file = 'model://uav_description/meshes/x500v2/battery_mesh_file.stl' -%}
+  {%- set battery_mount_mesh_file = 'model://uav_description/meshes/x500v2/battery_mount_mesh_file.stl' -%}
+  {%- set nuc_hex_posts_mesh_file = 'model://uav_description/meshes/x500v2/nuc_hex_posts_mesh_file.stl' -%}
+  {%- set gps_module_mesh_file = 'model://uav_description/meshes/x500v2/gps_module_mesh_file.stl' -%}
+  {%- set garmin_mount_mesh_file = 'model://uav_description/meshes/x500v2/garmin_mount_mesh_file.stl' -%}
+  {%- set lidar_mount_mesh_file = 'model://uav_description/meshes/x500v2/lidar_mount_mesh_file.stl' -%}
+  {%- set realsense_mount_mesh_file = 'model://uav_description/meshes/x500v2/realsense_mount_mesh_file.stl' -%}
+  {%- set bluefox_mount_mesh_file = 'model://uav_description/meshes/x500v2/bluefox_mount_mesh_file.stl' -%}
+  {%- set uvdar_mount_mesh = 'model://uav_description/meshes/dji/f450/dji_f450_uvdar_mount.dae' -%}
+  {%- set qorvo_dw1000_mount_file = 'model://uav_description/meshes/x500v2/qorvo_dw1000_mount.stl' -%}
 
   {# <!--}--> #}
 

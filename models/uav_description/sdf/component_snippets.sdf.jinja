@@ -1,7 +1,7 @@
 <?xml version="1.0"? encoding="utf-8">
 <sdf version="1.6">
 
-{%- import 'mrs_robots_description/sdf/generic_components.sdf.jinja' as generic -%}
+{%- import 'uav_description/sdf/generic_components.sdf.jinja' as generic -%}
 
 {# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! #}
 {# !! THIS DOCUMENT CONTAINS ONLY COMPLEX COMPONENT MACROS DESIGNED !! #}
@@ -193,7 +193,7 @@ limitations under the License.
 
       {{ generic.visual_mesh_macro(
         name = sensor_name,
-        mesh_file = 'model://mrs_robots_description/meshes/sensors/garmin_lidar_v3.stl',
+        mesh_file = 'model://uav_description/meshes/sensors/garmin_lidar_v3.stl',
         mesh_scale = '0.001 0.001 0.001',
         color = 'DarkGrey',
         x = 0.015,
@@ -267,7 +267,7 @@ limitations under the License.
 
       {{ generic.visual_mesh_macro(
         name = sensor_name,
-        mesh_file = 'model://mrs_robots_description/meshes/sensors/garmin_lidar_v3.stl',
+        mesh_file = 'model://uav_description/meshes/sensors/garmin_lidar_v3.stl',
         mesh_scale = '0.001 0.001 0.001',
         color = 'DarkGrey',
         x = 0.015,
@@ -341,7 +341,7 @@ limitations under the License.
 
       {{ generic.visual_mesh_macro(
         name = sensor_name,
-        mesh_file = 'model://mrs_robots_description/meshes/sensors/garmin_lidar_v3.stl',
+        mesh_file = 'model://uav_description/meshes/sensors/garmin_lidar_v3.stl',
         mesh_scale = '0.001 0.001 0.001',
         color = 'DarkGrey',
         x = 0.015,
@@ -541,7 +541,7 @@ limitations under the License.
       <!-- visuals {-->
       {{ generic.visual_mesh_macro(
         name = 'base_visual',
-        mesh_file = 'model://mrs_robots_description/meshes/sensors/rplidar.stl',
+        mesh_file = 'model://uav_description/meshes/sensors/rplidar.stl',
         mesh_scale = '0.001 0.001 0.001',
         color = 'FlatBlack',
         x = 0,
@@ -877,7 +877,7 @@ limitations under the License.
       <!-- visuals {-->
       {{ generic.visual_mesh_macro(
         name = 'base_visual',
-        mesh_file = 'model://mrs_robots_description/meshes/sensors/os1_64.dae',
+        mesh_file = 'model://uav_description/meshes/sensors/os1_64.dae',
         mesh_scale = '1 1 1',
         color = 'White',
         x = 0,
@@ -1060,7 +1060,7 @@ limitations under the License.
       <!-- visuals {-->
       {{ generic.visual_mesh_macro(
         name = 'base_visual',
-        mesh_file = 'model://mrs_robots_description/meshes/sensors/livox_mid360.dae',
+        mesh_file = 'model://uav_description/meshes/sensors/livox_mid360.dae',
         mesh_scale = '1 1 1',
         color = 'White',
         x = 0,
@@ -1570,7 +1570,7 @@ limitations under the License.
       max_distance = 80,
       noise_mean = 0.0,
       noise_stddev = spawner_args[spawner_keyword]['noise'],
-      mesh_file = 'model://mrs_robots_description/meshes/sensors/bluefox.dae',
+      mesh_file = 'model://uav_description/meshes/sensors/bluefox.dae',
       mesh_scale = '1 1 1',
       color = 'DarkGrey',
       visual_x = 0,
@@ -1625,7 +1625,7 @@ limitations under the License.
       max_distance = 80,
       noise_mean = 0.0,
       noise_stddev = spawner_args[spawner_keyword]['noise'],
-      mesh_file = 'model://mrs_robots_description/meshes/sensors/bluefox.dae',
+      mesh_file = 'model://uav_description/meshes/sensors/bluefox.dae',
       mesh_scale = '1 1 1',
       color = 'DarkGrey',
       visual_x = 0,
@@ -1680,7 +1680,7 @@ limitations under the License.
       max_distance = 80,
       noise_mean = 0.0,
       noise_stddev = spawner_args[spawner_keyword]['noise'],
-      mesh_file = 'model://mrs_robots_description/meshes/sensors/bluefox.dae',
+      mesh_file = 'model://uav_description/meshes/sensors/bluefox.dae',
       mesh_scale = '1 1 1',
       color = 'DarkGrey',
       visual_x = 0,
@@ -1735,7 +1735,7 @@ limitations under the License.
       max_distance = 40,
       noise_mean = 0.0,
       noise_stddev = spawner_args[spawner_keyword]['noise'],
-      mesh_file = 'model://mrs_robots_description/meshes/sensors/mobius.dae',
+      mesh_file = 'model://uav_description/meshes/sensors/mobius.dae',
       mesh_scale = '1 1 1',
       color = 'DarkGrey',
       visual_x = -0.004,
@@ -1790,7 +1790,7 @@ limitations under the License.
       max_distance = 40,
       noise_mean = 0.0,
       noise_stddev = spawner_args[spawner_keyword]['noise'],
-      mesh_file = 'model://mrs_robots_description/meshes/sensors/mobius.dae',
+      mesh_file = 'model://uav_description/meshes/sensors/mobius.dae',
       mesh_scale = '1 1 1',
       color = 'DarkGrey',
       visual_x = -0.004,
@@ -1845,7 +1845,7 @@ limitations under the License.
       max_distance = 40,
       noise_mean = 0.0,
       noise_stddev = spawner_args[spawner_keyword]['noise'],
-      mesh_file = 'model://mrs_robots_description/meshes/sensors/mobius.dae',
+      mesh_file = 'model://uav_description/meshes/sensors/mobius.dae',
       mesh_scale = '1 1 1',
       color = 'DarkGrey',
       visual_x = -0.004,
@@ -1900,7 +1900,7 @@ limitations under the License.
       max_distance = 40,
       noise_mean = 0.0,
       noise_stddev = spawner_args[spawner_keyword]['noise'],
-      mesh_file = 'model://mrs_robots_description/meshes/sensors/mobius.dae',
+      mesh_file = 'model://uav_description/meshes/sensors/mobius.dae',
       mesh_scale = '1 1 1',
       color = 'DarkGrey',
       visual_x = -0.004,
@@ -1964,7 +1964,7 @@ limitations under the License.
       max_distance = 40,
       noise_mean = 0.0,
       noise_stddev = spawner_args[spawner_keyword]['noise'],
-      mesh_file = 'model://mrs_robots_description/meshes/sensors/bluefox.dae',
+      mesh_file = 'model://uav_description/meshes/sensors/bluefox.dae',
       mesh_scale = '1 1 1',
       color = 'DarkGrey',
       visual_x = 0,
@@ -2310,7 +2310,7 @@ limitations under the License.
       max_distance = 80,
       noise_mean = 0.0,
       noise_stddev = spawner_args[spawner_keyword]['noise'],
-      mesh_file = 'model://mrs_robots_description/meshes/sensors/basler_dart.stl',
+      mesh_file = 'model://uav_description/meshes/sensors/basler_dart.stl',
       mesh_scale = '0.001 0.001 0.001',
       color = 'DarkGrey',
       visual_x = 0,
@@ -2613,7 +2613,7 @@ limitations under the License.
       max_distance = 40,
       noise_mean = 0.0,
       noise_stddev = spawner_args[spawner_keyword]['camera_noise'],
-      mesh_file = 'model://mrs_robots_description/meshes/sensors/bluefox.dae',
+      mesh_file = 'model://uav_description/meshes/sensors/bluefox.dae',
       mesh_scale = '1 1 1',
       color = 'DarkGrey',
       visual_x = 0,
@@ -2702,7 +2702,7 @@ limitations under the License.
       max_distance = 40,
       noise_mean = 0.0,
       noise_stddev = spawner_args[spawner_keyword]['camera_noise'],
-      mesh_file = 'model://mrs_robots_description/meshes/sensors/bluefox.dae',
+      mesh_file = 'model://uav_description/meshes/sensors/bluefox.dae',
       mesh_scale = '1 1 1',
       color = 'DarkGrey',
       visual_x = 0,
@@ -3169,7 +3169,7 @@ limitations under the License.
   {%- if spawner_keyword in spawner_args.keys() -%}
     {{ generic.handle_spawner_args(spawner_keyword, spawner_default_args, spawner_args) }}
 
-    {%- set mesh_file = 'model://mrs_robots_description/meshes/sensors/whycon_box.dae' -%}
+    {%- set mesh_file = 'model://uav_description/meshes/sensors/whycon_box.dae' -%}
     {%- set mesh_scale = '1 1 1' -%}
 
     <!-- Whycon Box {-->

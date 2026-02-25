@@ -2,7 +2,7 @@ class ComponentWrapper:
 
     def __init__(self, keyword, description, default_args):
         '''
-        A wrapper for params defined in the jinja template that are recognized and used by the mrs_drone_spawner
+        A wrapper for params defined in the jinja template that are recognized and used by the uavs_spawner
 
         :param keyword: string used to activate the component by using '--keyword' as spawner argument
 

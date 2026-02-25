@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <sdf version='1.6'>
 
-  {%- import 'mrs_robots_description/sdf/component_snippets.sdf.jinja' as components -%}
-  {%- import 'mrs_robots_description/sdf/generic_components.sdf.jinja' as generic -%}
+  {%- import 'uav_description/sdf/component_snippets.sdf.jinja' as components -%}
+  {%- import 'uav_description/sdf/generic_components.sdf.jinja' as generic -%}
 
   {# ================================================================== #}
   {# ||                    parameters definition                     || #}
@@ -47,25 +47,25 @@
   {# Meshes {--> #}
 
   {# Drone parts {--> #}
-  {%- set central_board_mesh_top = 'model://mrs_robots_description/meshes/dji/f550/dji_f550_central_board.dae' -%}
-  {%- set central_board_mesh_bottom = 'model://mrs_robots_description/meshes/dji/f550/dji_f550_central_board.dae' -%}
-  {%- set arm_mesh_file = 'model://mrs_robots_description/meshes/dji/f550/dji_f550_arm.dae' -%}
-  {%- set leg_mesh_file = 'model://mrs_robots_description/meshes/dji/f550/dji_f550_leg_170mm.dae'-%}
-  {%- set motor_mesh_file = 'model://mrs_robots_description/meshes/dji/f550/dji_f550_rotor.dae' -%}
-  {%- set prop_mesh_file = 'model://mrs_robots_description/meshes/dji/f550/dji_f550_prop.dae'-%}
-  {%- set pixhawk_mesh_file = 'model://mrs_robots_description/meshes/sensors/pixhawk.dae' -%}
-  {%- set nuc_mesh_file = 'model://mrs_robots_description/meshes/dji/f550/dji_f550_nuc.dae' -%}
+  {%- set central_board_mesh_top = 'model://uav_description/meshes/dji/f550/dji_f550_central_board.dae' -%}
+  {%- set central_board_mesh_bottom = 'model://uav_description/meshes/dji/f550/dji_f550_central_board.dae' -%}
+  {%- set arm_mesh_file = 'model://uav_description/meshes/dji/f550/dji_f550_arm.dae' -%}
+  {%- set leg_mesh_file = 'model://uav_description/meshes/dji/f550/dji_f550_leg_170mm.dae'-%}
+  {%- set motor_mesh_file = 'model://uav_description/meshes/dji/f550/dji_f550_rotor.dae' -%}
+  {%- set prop_mesh_file = 'model://uav_description/meshes/dji/f550/dji_f550_prop.dae'-%}
+  {%- set pixhawk_mesh_file = 'model://uav_description/meshes/sensors/pixhawk.dae' -%}
+  {%- set nuc_mesh_file = 'model://uav_description/meshes/dji/f550/dji_f550_nuc.dae' -%}
   {# <!--}--> #}
 
   {# Mounts {--> #}
-  {%- set battery_and_garmin_mount_mesh = 'model://mrs_robots_description/meshes/dji/f550/dji_f550_battery_and_garmin_mount.dae' -%}
-  {%- set ouster_mount_mesh = 'model://mrs_robots_description/meshes/dji/f550/dji_f550_ouster_mount.dae' -%}
-  {%- set rplidar_mount_mesh = 'model://mrs_robots_description/meshes/dji/f550/dji_f550_rplidar_mount.dae' -%}
-  {%- set realsense_top_mount_mesh = 'model://mrs_robots_description/meshes/dji/f550/dji_f550_realsense_top_mount.dae' -%}
-  {%- set realsense_front_mount_mesh = 'model://mrs_robots_description/meshes/dji/f550/dji_f550_realsense_front_pitched_0_mount.dae' -%}
-  {%- set realsense_front_pitched_mount_mesh = 'model://mrs_robots_description/meshes/dji/f550/dji_f550_realsense_front_pitched_10_mount.dae' -%}
-  {%- set realsense_front_down_mount_mesh = 'model://mrs_robots_description/meshes/dji/f550/dji_f550_realsense_front_pitched_90_mount.dae' -%}
-  {%- set uvdar_mount_mesh = 'model://mrs_robots_description/meshes/dji/f550/dji_f550_uvdar_mount.dae' -%}
+  {%- set battery_and_garmin_mount_mesh = 'model://uav_description/meshes/dji/f550/dji_f550_battery_and_garmin_mount.dae' -%}
+  {%- set ouster_mount_mesh = 'model://uav_description/meshes/dji/f550/dji_f550_ouster_mount.dae' -%}
+  {%- set rplidar_mount_mesh = 'model://uav_description/meshes/dji/f550/dji_f550_rplidar_mount.dae' -%}
+  {%- set realsense_top_mount_mesh = 'model://uav_description/meshes/dji/f550/dji_f550_realsense_top_mount.dae' -%}
+  {%- set realsense_front_mount_mesh = 'model://uav_description/meshes/dji/f550/dji_f550_realsense_front_pitched_0_mount.dae' -%}
+  {%- set realsense_front_pitched_mount_mesh = 'model://uav_description/meshes/dji/f550/dji_f550_realsense_front_pitched_10_mount.dae' -%}
+  {%- set realsense_front_down_mount_mesh = 'model://uav_description/meshes/dji/f550/dji_f550_realsense_front_pitched_90_mount.dae' -%}
+  {%- set uvdar_mount_mesh = 'model://uav_description/meshes/dji/f550/dji_f550_uvdar_mount.dae' -%}
   {# <!--}--> #}
 
   {# Scales {--> #}

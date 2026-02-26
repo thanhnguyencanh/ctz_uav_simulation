@@ -9,6 +9,12 @@ curl https://ctu-mrs.github.io/ppa-stable/add_ppa.sh | bash
 sudo apt install ros-noetic-mrs-msgs ros-noetic-mrs-uav-px4-api ros-noetic-px4 ros-noetic-mavlink-sitl-gazebo ros-noetic-mavros-msgs ros-noetic-mrs-gazebo-common-resources ros-noetic-mrs-uav-testing ros-noetic-mrs-uav-gazebo-testing
 ```
 
+## Shell Additions
+```
+cd uav_shell_additions
+cp -r etc/uav_ws/ /etc/
+cp -r  usr/bin/. /usr/bin/
+```
 ## Start the Gazebo simulator
 
 To start the example Gazebo world call:

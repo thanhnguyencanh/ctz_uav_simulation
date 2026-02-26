@@ -5660,7 +5660,7 @@
           <geometry>
             <mesh>
               <scale>0.002 0.002 0.002</scale>
-              <uri>/home/thanhnc/semantic_ws/src/aizo_quadrotor/aizo_models//models/sensors/realsense/d455.stl</uri>
+              <uri>/home/thanhnc/semantic_ws/src/aizo_quadrotor/aizo_models/models/sensors/realsense/d455.stl</uri>
             </mesh>
           </geometry>
         </visual>
